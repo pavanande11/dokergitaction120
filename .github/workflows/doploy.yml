@@ -77,7 +77,7 @@ jobs:
             sleep 10
 
             # Insert records into MySQL database
-            sudo docker exec -i mysql mysql -uroot -proot ecommerce <<EOF
+            sudo docker exec -i db mysql -uroot -proot ecommerce <<EOF
             INSERT INTO products (name, category, price, image_path) VALUES
             ('Gaming PC', 'computers', 1200.00, 'gaming_pc.jpeg'),
             ('Office Desktop', 'computers', 800.00, 'office_desktop.jpeg'),
